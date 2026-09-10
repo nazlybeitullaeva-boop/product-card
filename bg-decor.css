@@ -1,0 +1,15 @@
+.bq-decor {
+  position: relative;
+}
+.bq-decor::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 85px;
+  width: 790px;
+  height: 697px;
+  background-image: url('images/bg 1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
