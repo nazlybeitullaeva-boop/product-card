@@ -1,4 +1,4 @@
-.card-conteiner {
+.card-container {
   display: flex;
   flex-direction: column;
   width: var(--card-width);
