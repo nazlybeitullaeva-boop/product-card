@@ -148,6 +148,7 @@ function showNumber(number) {
 }
 numbers.forEach(showNumber);
 
+let names = ['Nazly', 'Arzy', 'Yasmin'];
 function greet(name) {
  console.log(`Привет, ${name}`); 
 }
@@ -169,8 +170,8 @@ const titleById = document.getElementById('title');
 
 const titleBySelector = document.querySelector('#title');
 
-querySelector('#title') /* принимает CSS-селектор (значит, там нужен # перед id, как в CSS). 
-Он может искать по id, классу, тегу, атрибуту — по любому CSS-селектору */
+// querySelector('#title') /* принимает CSS-селектор (значит, там нужен # перед id, как в CSS). 
+//Он может искать по id, классу, тегу, атрибуту — по любому CSS-селектору */
 
 /*
   querySelector и querySelectorAll — оба метода ищут элементы 
