@@ -46,5 +46,13 @@ const emails = comments.reduce((acc, comment) => {
 console.log(emails);
 
 const emails2 = comments.reduce((acc, comment) => [...acc, comment.email], []);
-console.log(emails.toString());
-console.log(emails2.join(", "));
+console.log(emails2);
+
+const emailsMap = comments.map((comment) => comment.email);
+console.log(emailsMap);
+
+const emailsToString = emailsMap.toString();
+console.log(emailsToString);
+
+const emailsJoin = emailsMap.join(", ");
+console.log(emailsJoin);
