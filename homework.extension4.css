@@ -1,0 +1,15 @@
+.active {
+  background: #f4c7d6;
+}
+
+.selected {
+  outline: 2px solid #c2185b;
+}
+
+.card {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
