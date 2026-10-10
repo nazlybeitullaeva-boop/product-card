@@ -1,0 +1,70 @@
+#toggle-color-button {
+  background-color: #ffffff;
+  color: #515076;
+  border: 1.5px solid #515076;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+#toggle-color-button.active {
+  background-color: #515076;
+  color: #ffffff;
+}
+#change-color-all-cards-button {
+  background-color: #ffffff;
+  color: #515076;
+  border: 1.5px solid #515076;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.25s ease;
+
+}
+#change-color-first-card-button {
+  background-color: #ffffff;
+  color: #515076;
+  border: 1.5px solid #515076;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+#open-google-button {
+  background-color: #ffffff;
+  color: #515076;
+  border: 1.5px solid #515076;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+#output-console-log-button {
+  background-color: #ffffff;
+  color: #515076;
+  border: 1.5px solid #515076;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+
