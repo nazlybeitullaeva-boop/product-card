@@ -155,13 +155,13 @@ function greet(name) {
 names.forEach(greet); 
 
 const title = document.getElementById('title'); // ищет по id
-const button = document.getElementById('button');
+const button = document.querySelector('.button');
 const firstText = document.querySelector('.text');
 const firstCard = document.querySelector('.card'); // Вернёт только первую найденную карточку
 const allCards = document.querySelectorAll('.card'); // вернёт все элементы с классом card в виде NodeList.
 const allTexts = document.getElementsByClassName('text');
 const title2 = document.querySelector('.page-title');
-const button2 = document.querySelector('#button'); /* принимает CSS-селектор (значит, там нужен # перед id, как в CSS). 
+const button2 = document.querySelector('.button'); /* принимает CSS-селектор (значит, там нужна точка перед классом или # перед id, как в CSS).
 Он может искать по id, классу, тегу, атрибуту — по любому CSS-селектору */
 
 
