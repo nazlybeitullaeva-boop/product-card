@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Доп. ДЗ: формы и события</title>
+  <link rel="stylesheet" href="homework.extension5.css">
+  <script src="homework.extension5.js" defer></script>
+</head>
+<body>
+  <section>
+    <h2>1–5. Подписка</h2>
+    <form id="subscribe-form">
+      <label for="subscribe-email">Email</label>
+      <input id="subscribe-email" name="email" type="email" placeholder="you@example.com" minlength="5" required>
+      <button type="submit">Подписаться</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>6–8. Обратная связь</h2>
+    <form id="feedback-form">
+      <label for="feedback-name">Имя</label>
+      <input id="feedback-name" name="name" type="text" placeholder="Ваше имя" minlength="2" required>
+      <label for="feedback-email">Email</label>
+      <input id="feedback-email" name="email" type="email" placeholder="you@example.com" required>
+      <label for="feedback-message">Сообщение</label>
+      <textarea id="feedback-message" name="message" rows="3" placeholder="Ваше сообщение" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>9. Событие input</h2>
+    <label for="username">Имя пользователя</label>
+    <input id="username" name="username" type="text" placeholder="username">
+  </section>
+
+  <section>
+    <h2>10. Счётчик символов</h2>
+    <label for="counter-textarea">Текст</label>
+    <textarea id="counter-textarea" rows="3" maxlength="100"></textarea>
+    <p id="counter-text">0 / 100</p>
+  </section>
+
+  <section>
+    <h2>11. Событие change</h2>
+    <label for="direction-select">Направление</label>
+    <select id="direction-select" name="direction">
+      <option value="Frontend">Frontend</option>
+      <option value="Backend">Backend</option>
+      <option value="Design">Design</option>
+    </select>
+  </section>
+
+  <section>
+    <h2>12. Согласие</h2>
+    <form id="agree-form">
+      <label for="agree-name">Имя</label>
+      <input id="agree-name" name="name" type="text" placeholder="Ваше имя">
+      <label>
+        <input type="checkbox" name="agree" required>
+        Я согласен с правилами
+      </label>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>13. Анкета</h2>
+    <form id="survey-form">
+      <label for="survey-first-name">Имя</label>
+      <input id="survey-first-name" name="firstName" type="text" placeholder="Имя" minlength="2" required>
+      <label for="survey-last-name">Фамилия</label>
+      <input id="survey-last-name" name="lastName" type="text" placeholder="Фамилия" minlength="2" required>
+      <label for="survey-email">Email</label>
+      <input id="survey-email" name="email" type="email" placeholder="you@example.com" required>
+      <label for="survey-birth">Дата рождения</label>
+      <input id="survey-birth" name="birthDate" type="date" required>
+      <label for="survey-direction">Направление</label>
+      <select id="survey-direction" name="direction" required>
+        <option value="">Выберите направление</option>
+        <option value="Frontend">Frontend</option>
+        <option value="Backend">Backend</option>
+        <option value="Design">Design</option>
+      </select>
+      <label for="survey-comment">Комментарий</label>
+      <textarea id="survey-comment" name="comment" rows="3" placeholder="Комментарий"></textarea>
+      <label>
+        <input type="checkbox" name="agree" required>
+        Я согласен с правилами
+      </label>
+      <button type="submit">Отправить анкету</button>
+    </form>
+  </section>
+</body>
+</html>
