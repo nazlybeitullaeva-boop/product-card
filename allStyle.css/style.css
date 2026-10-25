@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: "Montserrat";
+   src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+  --color-text: #515076;      /* основной текст, заголовки, рамки */
+  --color-muted: #A5A3B9;     /* подпись "для нормальной кожи" */
+  --color-card-bg: #F7F7FA;   /* фон карточки */
+  --color-page-bg: #FFFFFF;   /* фон страницы */
+
+  --font-main: 'Montserrat', Arial, sans-serif;
+
+  --card-width: 340px;
+  --card-radius: 12px;
+  --card-padding: 25px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  z-index: 0;
+  font-family: var(--font-main);
+  background: var(--color-page-bg);
+  color: var(--color-text);
+  padding: 40px 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 400px) {
+  :root {
+    --card-width: 100%;
+}
+}

@@ -4,67 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Выбери свой продукт</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="./page-title.css">
-  <link rel="stylesheet" href="./cards.css">
-  <link rel="stylesheet" href="./card.css">
-  <link rel="stylesheet" href="./card__composition-list-item.css">
-  <link rel="stylesheet" href="./card__composition-list.css">
-  <link rel="stylesheet" href="./card__composition-title.css">
-  <link rel="stylesheet" href="./card__image.css">
-  <link rel="stylesheet" href="./card__price.css">
-  <link rel="stylesheet" href="./card__description.css">
-  <link rel="stylesheet" href="./card__footer.css">
-  <link rel="stylesheet" href="./card__title.css">
-  <link rel="stylesheet" href="./card__label.css">
-  <link rel="stylesheet" href="./bg-decor.css">
-  <link rel="stylesheet" href="./button.css">
-  <script src="homework-7.js" defer></script>
-  <script src="homework-8.js" defer></script>
-  <script src="homework.extension.js" defer></script>
-  <script src="homework.extension3.js" defer></script>
-  <script src="homework.extension4.js" defer></script>
-  <script src="homework.extension5.js" defer></script>
-  <script src="homework.extension6.js" defer></script>
-  <script type="module" src="homework-9.js"></script>
-  <script type="module" src="homework-10.js"></script>
-  <script type="module" src="homework-11.js"></script>
+
+  <link rel="stylesheet" href="allStyle.css/style.css">
+  <link rel="stylesheet" href="allStyle.css/page-title.css">
+  <link rel="stylesheet" href="allStyle.css/cards.css">
+  <link rel="stylesheet" href="allStyle.css/card.css">
+  <link rel="stylesheet" href="allStyle.css/card__composition-list-item.css">
+  <link rel="stylesheet" href="allStyle.css/card__composition-list.css">
+  <link rel="stylesheet" href="allStyle.css/card__composition-title.css">
+  <link rel="stylesheet" href="allStyle.css/card__image.css">
+  <link rel="stylesheet" href="allStyle.css/card__price.css">
+  <link rel="stylesheet" href="allStyle.css/card__description.css">
+  <link rel="stylesheet" href="allStyle.css/card__footer.css">
+  <link rel="stylesheet" href="allStyle.css/card__title.css">
+  <link rel="stylesheet" href="allStyle.css/card__label.css">
+  <link rel="stylesheet" href="allStyle.css/bg-decor.css">
+  <link rel="stylesheet" href="allStyle.css/button.css">
+  <link rel="stylesheet" href="allStyle.css/modal.css">
+  <link rel="stylesheet" href="allStyle.css/footer.css">
+
+  <script type="module" src="all.JS.homework/homework-9.js"></script>
+  <script type="module" src="all.JS.homework/homework-10.js"></script>
+  <script type="module" src="all.JS.homework/homework-11.js"></script>
 </head>
 <body>
-  <footer class="footer">
+
+<div class="bq-decor"></div>
+
+<h1 id="title" class="page-title">Выбери свой продукт</h1>
+
+<ul class="cards" id="product-list"></ul>
+
+<template id="product-template">
+  <li class="card">
+    <img class="card__image" src="" alt="" />
+    <span class="card__label"></span>
+    <h2 class="card__title"></h2>
+    <p class="card__description text"></p>
+    <span class="card__composition-title">Состав:</span>
+    <ul class="card__composition-list"></ul>
+    <div class="card__footer">
+      <b class="card__price-label">Цена</b>
+      <span class="card__price"></span>
+      <button class="button">Нажать</button>
+    </div>
+  </li>
+</template>
+
+<button class="registration-button" type="button">Регистрация</button>
+
+<div class="overlay"></div>
+<div class="modal">
+  <button class="modal__close" type="button">✕</button>
+  <form class="modal__form">
+    <label class="modal__label" for="firstName">Имя</label>
+    <input class="modal__input" id="firstName" name="firstName" type="text" placeholder="Введите имя" required>
+    <label class="modal__label" for="surName">Фамилия</label>
+    <input class="modal__input" id="surName" name="surName" type="text" placeholder="Введите фамилию" required>
+    <label class="modal__label" for="birthDate">Дата рождения</label>
+    <input class="modal__input" id="birthDate" name="birthDate" type="date" placeholder="Введите дату рождения" required>
+    <label class="modal__label" for="login">Логин</label>
+    <input class="modal__input" id="login" name="login" type="text" placeholder="Введите логин" required>
+    <label class="modal__label" for="password">Пароль</label>
+    <input class="modal__input" id="password" name="password" type="password" placeholder="Введите пароль" required>
+    <label class="modal__label" for="confirmPassword">Повтор пароля</label>
+    <input class="modal__input" id="confirmPassword" name="confirmPassword" type="password" placeholder="Повторите пароль" required>
+    <button class="modal__submit" type="submit">Зарегистрироваться</button>
+  </form>
+</div>
+<footer class="footer">
+  <div class="footer__info">
+    <h2 class="footer__name">Product Cards</h2>
+    <p class="footer__text">Косметика для ухода за кожей — увлажнение, очищение и забота каждый день.</p>
+  </div>
+  <ul class="footer__socials">
+    <li><a href="https://t.me/">Telegram</a></li>
+    <li><a href="https://vk.com/">VK</a></li>
+  </ul>
+  <nav class="footer__menu">
+    <h3 class="footer__menu-title">Быстрые ссылки</h3>
+    <ul>
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Магазин</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+
   <form class="footer__form">
     <label class="footer__label" for="email">Почта</label>
     <input class="footer__input" id="email" name="email" type="email" required>
     <button class="footer__button" type="submit">Подписаться</button>
   </form>
+  <p class="footer__copyright">
+    <small>© 2026 Product Cards. All rights reserved.</small>
+  </p>
 </footer>
-   <button id="change-color-all-cards-button">Покрасить все</button>
-   <button id="change-color-first-card-button">Покрасить первую</button>
-   <button id="open-google-button">Открыть Google</button>
-   <button id="output-console-log-button">Вывести сообщение в консоль лог</button>
-   <button id="toggle-color-button">Переключить цвет</button>
-
-   <div class="bq-decor"></div>
-
-   <h1 id="title" class="page-title">Выбери свой продукт</h1>
-
-  <ul class="cards" id="product-list"></ul>
-
-  <template id="product-template">
-    <li class="card">
-      <img class="card__image" src="" alt="" />
-      <span class="card__label"></span>
-      <h2 class="card__title"></h2>
-      <p class="card__description text"></p>
-      <span class="card__composition-title">Состав:</span>
-      <ul class="card__composition-list"></ul>
-      <div class="card__footer">
-        <b class="card__price-label">Цена</b>
-        <span class="card__price"></span>
-        <button class="button">Нажать</button>
-      </div>
-    </li>
-  </template>
-
 </body>
 </html>
