@@ -93,38 +93,30 @@ eventCloseButton.addEventListener('click', closeEventModal);
 eventOverlay.addEventListener('click', closeEventModal);
 
 function handleEventSubmit(event) {
-  // 1. не перезагружаем страницу
   event.preventDefault();
 
-  // 2. собираем данные формы в объект
   const formData = new FormData(eventForm);
   const user = Object.fromEntries(formData);
 
-  // 3. проверяем пароли
   if (user.password !== user.repeatPassword) {
     alert('Пароли не совпадают');
     return;
   }
 
-
   delete user.password;
   delete user.repeatPassword;
-
 
   user.createdOn = new Date();
 
   console.log(user);
 
-  // 7. очищаем форму
   eventForm.reset();
-
 
   closeEventModal();
 }
 
 eventForm.addEventListener('submit', handleEventSubmit);
 
-// ===== 5. Заявка в модалке =====
 const requestButton = document.querySelector('.request-button');
 const requestModal = document.querySelector('.request-modal');
 const requestOverlay = document.querySelector('.request-overlay');
