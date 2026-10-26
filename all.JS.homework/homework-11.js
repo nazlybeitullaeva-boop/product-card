@@ -61,6 +61,8 @@ function handleRegistrationSubmit(event) {
     createdOn: new Date(),
   };
   user = newUser;
+  delete user.password;
+  delete user.confirmPassword;
   console.log(user);
   closeModal();
 }
