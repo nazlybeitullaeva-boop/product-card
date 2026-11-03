@@ -25,7 +25,8 @@
 
   <script type="module" src="all.JS.homework/homework-9.js"></script>
   <script type="module" src="all.JS.homework/homework-10.js"></script>
-  <script type="module" src="all.JS.homework/homework-11.js"></script>
+<!-- <script type="module" src="all.JS.homework/homework-11.js"></script> -->
+  <script type="module" src="main.js"></script>
 </head>
 <body>
 
@@ -51,12 +52,15 @@
   </li>
 </template>
 
-<button class="registration-button" type="button">Регистрация</button>
+<div class="auth-buttons">
+  <button id="registration-button" class="registration-button" type="button">Регистрация</button>
+  <button id="login-button" class="registration-button" type="button">Войти</button>
+</div>
 
-<div class="overlay"></div>
-<div class="modal">
+<div id="overlay" class="overlay"></div>
+<div id="modal" class="modal">
   <button class="modal__close" type="button">✕</button>
-  <form class="modal__form">
+  <form id="modal-form" class="modal__form">
     <label class="modal__label" for="firstName">Имя</label>
     <input class="modal__input" id="firstName" name="firstName" type="text" placeholder="Введите имя" required>
     <label class="modal__label" for="surName">Фамилия</label>
@@ -72,7 +76,17 @@
     <button class="modal__submit" type="submit">Зарегистрироваться</button>
   </form>
 </div>
-<footer class="footer">
+<div id="login-modal" class="modal">
+  <button class="modal__close" type="button">✕</button>
+  <form id="login-form" class="modal__form">
+    <label class="modal__label" for="loginInput">Логин</label>
+    <input class="modal__input" id="loginInput" name="login" type="text" placeholder="Введите логин" required>
+    <label class="modal__label" for="passwordInput">Пароль</label>
+    <input class="modal__input" id="passwordInput" name="password" type="password" placeholder="Введите пароль" required>
+    <button class="modal__submit" type="submit">Войти</button>
+  </form>
+</div>
+<footer id="footer" class="footer">
   <div class="footer__info">
     <h2 class="footer__name">Product Cards</h2>
     <p class="footer__text">Косметика для ухода за кожей — увлажнение, очищение и забота каждый день.</p>
@@ -90,7 +104,7 @@
     </ul>
   </nav>
 
-  <form class="footer__form">
+  <form id="footer-form" class="footer__form">
     <label class="footer__label" for="email">Почта</label>
     <input class="footer__input" id="email" name="email" type="email" required>
     <button class="footer__button" type="submit">Подписаться</button>

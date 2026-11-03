@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Доп ДЗ 6 — формы</title>
+  <link rel="stylesheet" href="доп-дз-6.css">
+ <script type="module" src="доп-дз-6.js"></script>
+</head>
+<body>
+
+  <h1>Форма обратной связи</h1>
+
+  <form class="feedback-form">
+
+    <label for="name">Имя</label>
+    <input id="name" name="name" type="text" placeholder="Ваше имя" required minlength="2">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="example@mail.ru" required>
+
+    <label for="message">Сообщение</label>
+    <textarea id="message" name="message" placeholder="Ваше сообщение" required minlength="10"></textarea>
+
+    <button type="submit">Отправить</button>
+
+
+  </form>
+
+
+  <h2>Смена пароля</h2>
+
+  <form class="password-form">
+    <label for="newPassword">Новый пароль</label>
+    <input id="newPassword" name="newPassword" type="password" required minlength="6">
+
+    <label for="repeatPassword">Повторите пароль</label>
+    <input id="repeatPassword" name="repeatPassword" type="password" required minlength="6">
+
+    <button type="submit">Сменить пароль</button>
+  </form>
+  
+ <h2>Анкета</h2>
+
+<form class="profile-form">
+  <label for="profileName">Имя</label>
+  <input id="profileName" name="name" type="text" required>
+
+  <label for="profileSurname">Фамилия</label>
+  <input id="profileSurname" name="surName" type="text" required>
+
+  <label for="profileEmail">Email</label>
+  <input id="profileEmail" name="email" type="email" required>
+
+  <label for="profileBirthDate">Дата рождения</label>
+  <input id="profileBirthDate" name="birthDate" type="date" required>
+
+  <button type="submit">Отправить анкету</button>
+</form>
+<h2>Регистрация</h2>
+
+<form class="register-form">
+  <label for="regName">Имя</label>
+  <input id="regName" name="name" type="text" placeholder="Введите имя" required>
+
+  <label for="regLogin">Логин</label>
+  <input id="regLogin" name="login" type="text" placeholder="Введите логин" required>
+
+  <label for="regEmail">Email</label>
+  <input id="regEmail" name="email" type="email" placeholder="example@mail.ru" required>
+
+  <label for="regPassword">Пароль</label>
+  <input id="regPassword" name="password" type="password" placeholder="Введите пароль" required minlength="6">
+
+  <label for="regRepeatPassword">Повтор пароля</label>
+  <input id="regRepeatPassword" name="repeatPassword" type="password" placeholder="Повторите пароль" required minlength="6">
+
+  <button type="submit">Зарегистрироваться</button>
+</form>
+
+<h2>Заявка</h2>
+<button class="request-button" type="button">Оставить заявку</button>
+<div class="overlay request-overlay"></div>
+<div class="modal request-modal">
+  <button class="modal__close" type="button">✕</button>
+  <form class="request-form">
+<label for="requestName">Имя</label>
+<input id="requestName" name="name" type="text" required>
+
+<label for="requestPhone">Телефон</label>
+<input id="requestPhone" name="phone" type="tel" required>
+
+<label for="requestEmail">Email</label>
+<input id="requestEmail" name="email" type="email" required>
+
+<button type="submit">Отправить</button>
+  </form>
+</div>
+<h2>Мероприятие</h2>
+<button class="event-button" type="button">Зарегистрироваться на мероприятие</button>
+<div class="overlay event-overlay"></div>
+<div class="modal event-modal">
+  <button class="modal__close" type="button">✕</button>
+  <form class="event-form">
+    <label for="eventName">Имя</label>
+    <input id="eventName" name="name" type="text" required minlength="2">
+
+    <label for="eventSurname">Фамилия</label>
+    <input id="eventSurname" name="surName" type="text" required minlength="2">
+
+    <label for="eventEmail">Email</label>
+    <input id="eventEmail" name="email" type="email" required>
+
+    <label for="eventBirthDate">Дата рождения</label>
+    <input id="eventBirthDate" name="birthDate" type="date" required>
+
+    <label for="eventLogin">Логин</label>
+    <input id="eventLogin" name="login" type="text" required minlength="3">
+
+    <label for="eventPassword">Пароль</label>
+    <input id="eventPassword" name="password" type="password" required minlength="6">
+
+    <label for="eventRepeatPassword">Повтор пароля</label>
+    <input id="eventRepeatPassword" name="repeatPassword" type="password" required minlength="6">
+
+    <button type="submit">Зарегистрироваться</button>
+  </form>
+</div>
+</body>
+</html>
+
