@@ -1,12 +1,16 @@
-import Modal from './Modal.js';
+import Modal from './homework-14/Modal.js';
 import Form from './Form.js';
 import Product from './Product.js';
 import Lipstick from './Lipstick.js';
 import Cream from './Cream.js';
-  
+import { Cafe } from './Cafe.js';
+import { Coffee } from './Coffee.js';
+import { Tea } from './Tea.js';
+import { Lemonade } from './Lemonade.js';
 
-const modal = new Modal('modal');
-const loginModalInstance = new Modal('login-modal');
+
+const modal = new Modal('modal', true);
+const loginModalInstance = new Modal('login-modal', true);
 const loginFormInstance = new Form('login-form');
 const registerButton = document.querySelector('#registration-button');
 const loginButton = document.querySelector('#login-button');
@@ -60,11 +64,6 @@ console.log(cream);
 
 
 
-
-import { Cafe } from './Cafe.js';
-import { Coffee } from './Coffee.js';
-import { Tea } from './Tea.js';
-import { Lemonade } from './Lemonade.js';
 
 const cafe = new Cafe('Уютное кафе', 'Симферополь');
 const coffee = new Coffee('Latte', 5, 90, 'medium', 'arabica', 'oat');
