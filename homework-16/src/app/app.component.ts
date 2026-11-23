@@ -7,7 +7,6 @@ import './training';
   styles: [],
   template: `
     <h1>ДЗ №16 · TypeScript</h1>
-    <p>Результаты console.log смотри в консоли браузера (F12 → Console).</p>
   `,
 })
 export class App {}
