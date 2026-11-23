@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Мурзик", "surname": "Пушистый", "email": "murzik@example.com", "age": 3, "breed": "сибирский" },
+  { "id": 2, "name": "Барсик", "surname": "Усатый", "email": "barsik@example.com", "age": 5, "breed": "британский" },
+  { "id": 3, "name": "Васька", "surname": "Рыжий", "email": "vaska@example.com", "age": 2, "breed": "персидский" },
+  { "id": 4, "name": "Том", "surname": "Серый", "email": "tom@example.com", "age": 4, "breed": "шотландский" },
+  { "id": 5, "name": "Снежок", "surname": "Белый", "email": "snezhok@example.com", "age": 1, "breed": "мейн-кун" },
+  { "id": 6, "name": "Люся", "surname": "Чёрная", "email": "lusya@example.com", "age": 3, "breed": "сиамский" }
+]
